@@ -1,0 +1,6 @@
+asyncio
+colorama
+web3
+aiohttp
+argparse
+pyfiglet
