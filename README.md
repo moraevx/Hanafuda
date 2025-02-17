@@ -23,22 +23,22 @@ i'm Moraevx
 1. **Instal python3:**
    
    ```bash
-   sudo apt install python3
+    sudo apt install python3
    ```
 3. **Instal PIP:**
    ```bash
-   sudo apt install python3-pip
+    sudo apt install python3-pip
    ```
 4. **Verifikasi instalasi:**
    
    ```bash
-   python3 --version
+    python3 --version
    ```
 5. **Instal Paket**
    
    ```bash
-   sudo apt update && sudo apt upgrade -y
-  sudo apt install -y python3 python3-pip python3-aiohttp python3-colorama python3-web3 python3-argparse python3-pyfiglet
+    sudo apt update && sudo apt upgrade -y
+    sudo apt install -y python3 python3-pip python3-aiohttp python3-colorama python3-web3 python3-argparse python3-pyfiglet
    ```
    
 ## Clone Repo Dan Menjalankan:
