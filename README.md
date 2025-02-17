@@ -2,12 +2,22 @@
 
 Proyek ini hanya untuk experimen dan edukasi semata, gunakan dengan bijak. kami tidak bertanggung jawab apabila proyek ini digunakan untuk tujuan yang tidak tepat.
 **Gunakan dengan bijak** kami tidak bertanggung jawab apa bila akun yang anda gunakan di tangguhkan sementara atau di blokir secara permanet.
-##Fitur
-
   
 i'm Moraevx 
 
 **Terima Kasih**
+#Fitur
+- Multi Akun
+- Auto Draw
+- Auto Deposit
+
+
+## Mengambil AuthToken dan RefreshToken
+- Login terlebih dahulu ke https://hanafuda.hana.network/dashboard
+- Gunakan kode undangan `**XC2MZ4**` untuk mendapatkan point tambahan
+- Gunakan Dev Tool atau (Tekan F12 atau Ctrl + Shift + I di Windows/Linux, atau Cmd + Option + I di macOS )
+  
+  
 ## Instal python
 
 1. **Instal python3:**
@@ -24,8 +34,8 @@ i'm Moraevx
    ```
 4. **Instal Paket**
    ```bash
-   sudo apt update
-   sudo apt install python3-requests python3-termcolor python3-colorama python3-pyfiglet
+   sudo apt update && sudo apt upgrade -y
+  sudo apt install -y python3 python3-pip python3-aiohttp python3-colorama python3-web3 python3-argparse python3-pyfiglet
    ```
    
 ## Clone Repo Dan Menjalankan:
@@ -33,54 +43,51 @@ i'm Moraevx
 1. **Clone repositori ini:**
  
    ```bash
-   git clone https://github.com/moraevx/assister.git
-   cd assister
+   git clone https://github.com/moraevx/hanafuda.git
+   cd hanafuda
    ```
    
-2. **Siapkan file `auth.txt`:**
+2. **Siapkan file `pvkey.txt`:**
 
-   - Buat file bernama `auth.txt` di direktori yang sama dengan skrip.
-   - Tambahkan token otentikasi Anda, satu token per baris. Setiap token mewakili akun yang berbeda.
+   - Ganti file `pvkey.txt` dengan privatkey anda
+   - Setaip line mewakili akun yang berbeda
 
-   Contoh isi `auth.txt`:
+   Contoh isi `pvkey.txt`:
 
    ```
-   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
-   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ8...
+   {
+    "Your_Privatkey_1"
+    "Your_Privatkey_1"  
+   }
    ```
 
-3. **Jalankan skrip:**
+3. **Siapkan file `token.txt`:**
 
-   ```bash
-   python3 main.py
+   - Ganti dengan refreshToken anda
+   - Setiap line mewakili akun yang berbeda **[ HARUS SAMA DENGAN URUTAN PRIVATKEY ]**
+
+   ```
+    AMf-vB...Your_Token_1
+    AMf-vB...Your_Token_2
    ```
 
-   Skrip ini akan secara otomatis:
-   - Mengklaim poin harian untuk setiap akun.
+3. **Siapkan file `token.json`:**
 
-## Mengambil Token Otentikasi
+   - Ganti dengan authToken dan refreshToken anda
+   - Setiap line mewakili akun yang berbeda **[ HARUS SAMA DENGAN URUTAN PRIVATKEY ]**
 
-Untuk mengambil `auth` dari cookies di browser:
-
-1. **Buka Developer Tools:**
-   - Tekan `F12` atau `Ctrl + Shift + I` di Windows/Linux, atau `Cmd + Option + I` di macOS.
-   - Buka tab **Console**.
-
-2. **Jalankan skrip berikut di console:**
-
-   ```javascript
-   let cookies = document.cookie.split('; ');
-   let refreshToken = cookies.find(cookie => cookie.startsWith('refreshToken=')).split('=')[1];
-   prompt('UGD AIRDROP:', refreshToken);
    ```
-
-   - Sebuah prompt akan muncul dengan `auth`. Salin token tersebut dan tempelkan ke file `auth.txt`.
-
-## Catatan:
-
-- Pastikan Anda memperbarui file `auth.txt` dengan token yang valid secara berkala agar otomasi tetap berfungsi.
-- Skrip akan berhenti selama 24 jam setelah setiap kali dijalankan, menunggu untuk mengklaim poin harian berikutnya. Jika ingin bekerja selama 24 jam maka jalankan di dalam screen
-
+    [
+    {
+      "authToken": "Bearer your_initial_auth_token_1",
+      "refreshToken": "your_initial_refresh_token_1"
+    },
+    {
+      "authToken": "Bearer your_initial_auth_token_2",
+      "refreshToken": "your_initial_refresh_token_2"
+    }
+    ]
+   ```
 
 
 
