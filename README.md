@@ -17,6 +17,11 @@ i'm Moraevx
 - Gunakan kode undangan **`XC2MZ4`** untuk mendapatkan point tambahan
 - Gunakan Dev Tool atau (Tekan F12 atau Ctrl + Shift + I di Windows/Linux, atau Cmd + Option + I di macOS )
   
+  <!-- Uploading "Screenshot (137).png"... -->
+
+- Salin authToken untuk di masukan ke file `token.txt`
+- Salin authToken dan refreshToken untuk di masukan ke file `token.json`
+  
   
 ## Instal python
 
