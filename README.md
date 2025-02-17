@@ -103,5 +103,18 @@ i'm Moraevx
    python3 Draw.py
    ```
 
+#Note
+- Gunakan screen jika perlu 
+
+  ```
+  screen -S Hanafuda
+  ```
+
+- Jalankan scrip
+
+  ```
+  python3 Draw.py
+  ```
+
 
 
