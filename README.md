@@ -97,5 +97,11 @@ i'm Moraevx
     ]
    ```
 
+4. Jalankan Scrip
+
+   ```
+   python3 Draw.py
+   ```
+
 
 
