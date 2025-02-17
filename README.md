@@ -14,7 +14,7 @@ i'm Moraevx
 
 ## Mengambil AuthToken dan RefreshToken
 - Login terlebih dahulu ke https://hanafuda.hana.network/dashboard
-- Gunakan kode undangan `**XC2MZ4**` untuk mendapatkan point tambahan
+- Gunakan kode undangan **`XC2MZ4`** untuk mendapatkan point tambahan
 - Gunakan Dev Tool atau (Tekan F12 atau Ctrl + Shift + I di Windows/Linux, atau Cmd + Option + I di macOS )
   
   
